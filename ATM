@@ -1,0 +1,19 @@
+a = int(input("Enter Initial Balance: "))
+i = 3
+while(i != 0):
+    print("Initial Balance = ",a)
+    print("what do you wanna do ?")
+    print("0. exit")
+    print("1. deposit")
+    print("2. withdraw")
+    i = int(input(":"))
+
+    if(i == 1):
+        c = int(input("How much: "))
+        a = a + c
+    elif(i == 2):
+        d = int(input("How much: "))
+        if(d < a):
+            a = a - d
+        else:
+            print("Insufficient Balance")
